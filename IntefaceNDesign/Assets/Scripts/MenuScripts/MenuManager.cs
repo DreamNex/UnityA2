@@ -12,4 +12,19 @@ public class MenuManager : MonoBehaviour {
 	void Update () {
 	
 	}
+
+    public void BackButton() //To go back from other pages to menu 
+    {
+        Application.LoadLevel("MenuScene");
+    }
+
+    public void OptionsButton()
+    {
+        Application.LoadLevel("OptionScene");
+    }
+
+    public void ExitGame()
+    {
+        Application.Quit();
+    }
 }

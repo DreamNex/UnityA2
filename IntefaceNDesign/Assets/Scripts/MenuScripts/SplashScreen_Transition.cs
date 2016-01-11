@@ -3,7 +3,7 @@ using System.Collections;
 
 public class SplashScreen_Transition : MonoBehaviour {
 
-    float timeToChange = 1000;
+    float timeToChange = 5;
 
 	// Use this for initialization
 	void Start () {
@@ -20,13 +20,13 @@ public class SplashScreen_Transition : MonoBehaviour {
         if(timeToChange <= 0)
         {
             //Change the scene to menu scene
-            Application.LoadLevel(Application.loadedLevel + 1);
+            Application.LoadLevel("MenuScene");
         }
 	
 	}
 
     public void ChangeToMenu()
     {
-        Application.LoadLevel(Application.loadedLevel + 1);
+        Application.LoadLevel("MenuScene");
     }
 }
